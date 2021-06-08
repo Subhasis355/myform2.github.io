@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>FORM</title>
+</head>
+<body>
+    <h1><u>STUDENT LIBRARY FORM</u></h1>
+    <div class="form-container">
+        
+        <form name="myForm" id="signfrm" action="submit.html" method="post" onsubmit ="return handleForm()">
+            <label for="sname"> NAME OF STUDENT </label>
+            <input class="full-width" type="text" name="sName" id="sName" placeholder="ENTER YOUR NAME" autocomplete="off"><br>
+            <label for="ph"> CONTACT NO </label>
+            <input class="full-width" type="text" name="phone" id="phone" placeholder="ENTER PHONE NO" autocomplete="off" ><br>
+            <label for="mailid">ENTER EMAIL ID </label>
+            <input class="full-width" type="text" name="mailid" id="mailid" placeholder="ENTER MAIL ID" autocomplete="off" ><br>
+            <label for="lib"> LIBRARY NO </label>
+            <input class="full-width" type="text" name="libNo" id="libNo" placeholder="ENTER LIBRARY NO" autocomplete="off"><br>
+            <label for="gender" > GENDER </label><br>
+            <input name="gender" type="radio" value="Male"><span>Male</span>
+            <input name="gender" type="radio" value="Female"><span>Female</span>
+            <input name="gender" type="radio" value="Others"><span>Others</span><br>
+            <label for="dob">D.O.B</label><br>
+            <input class="full-width" name="dob" type="date" placeholder="" autocomplete="off"><br>
+            <label for="password"> PASSWORD </label>
+            <input class="full-width" type="password" name="password" id="pass" placeholder="ENTER THE PASSWORD" autocomplete="off"><i onclick="pwdToggle()" id="eye" class="glyphicon glyphicon-eye-open"></i><br>
+            <label for="conPassword"> CONFIRM PASSWORD </label>
+            <input class="full-width" type="password" name="conpassword" id="conpass" placeholder="CONFIRM PASSWORD" autocomplete="off"><br>
+            <input class="submit-btn" type="submit" value="Submit"><br>
+            <input class="re" type="reset" value="Reset">
+            <p id="error" class="error"></p>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

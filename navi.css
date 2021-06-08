@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#211838;
+    height : 100vh;
+    background-repeat: no-repeat;
+}
+#buffering{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#buffering img{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-body-container{
+    display: none;
+}
+.tiger1{
+   
+    margin: 10px;
+    height: 85px;
+    background-image: linear-gradient(to right,#18042cf5,#bdbbbf);
+    border: 3px solid ;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 5px 5px 10px #6fd2e8;
+    position: relative;
+}
+.logo{
+    height: 60px;
+    margin: 10px;
+    border-radius: 20px 0 20px 0;
+    float: left;
+    box-shadow:0 0 10px black;
+}
+@keyframes color-changer {
+    0%{
+        color: #000000;
+    }
+    25%{
+        color: #f54e93;
+    }
+    50%{
+        color: #070707;
+    }
+    75%{
+        color: #fc0000;
+    }
+    100%{
+        color:#ff0bd6;
+    }
+}
+.tiger2{
+    float: left;
+    color: aqua;
+    padding: 20px 2px;
+    font-size: 1.5em;
+    font-family: fantasy;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
+    animation: color-changer 5s infinite linear;
+}
+.tiger3{   
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-right: 40px;
+    padding: 27px 5px;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+a{    
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #46133f;
+    padding: 25px 10px;
+    transition: all .5s ease-in-out;
+
+}
+.tiger3 li a{
+    text-decoration: none;
+    padding: 30px 10px;
+}
+a:hover,.tiger2:hover{
+    background-image:linear-gradient(transparent,#81dce3);
+    color:black;
+    font-size: 2em;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuBtn{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    border-radius: 60%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    background-color: #033621;
+    border: 2px solid #e65212;
+    box-shadow: 0 0 5px 2px whitesmoke;
+    display: none;
+}
+.menuBtn .menuBtnIcon{
+    color: #81dce3;
+    margin: 3px 0 0 1.5px;
+    font-size: 1.2em;
+    transition: all 0.5s ease-in-out;
+}
+.side-by-side{
+    height: 400px;
+    width: 50%;
+    float: left;
+    padding: 25px;
+}
+.row1-col1 .showcase-img{
+    position: relative;
+    left: 50%;
+    height: 200px;
+    width: calc(100% -50px);
+    transform: translatex(-50%);
+
+}
+@keyframes color-changer {
+    0%{
+        color: #fcbb08;
+    }
+    
+    50%{
+        color: #e05151;
+    }
+    100%{
+        color:#020635;
+    }
+}
+.row1-col2{
+    color: #c8e796;
+    text-align: justify;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    animation: color-changer 5s infinite linear;
+}
+@keyframes color-changer {
+    0%{
+        color: #692222;
+    }
+    25%{
+        color: #f8046a;
+    }
+    50%{
+        color: #6b034c;
+    }
+    75%{
+        color: #18edc6;
+    }
+    100%{
+        color:#04fff2;
+    }
+}
+.animation-test{
+    text-align: center;
+    font-size: 5em;
+    animation: color-changer 5s infinite linear;
+    font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width:900px){
+    .tiger3{
+        float: none;
+        position: absolute;
+        top: 80px;
+        height: 0px;
+        overflow: hidden;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        align-items: center;
+        border: 2px solid #43fab4;
+        background-image: linear-gradient(rgba(2, 0, 10,.7), rgba(50, 25, 80,.7));
+        padding: 0;
+        margin: 0;
+        transition: all .5s ease;
+    }
+    
+    .tiger3 li a{
+        color: white;
+        padding: 2px;
+        width: auto;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+    a:hover{
+        background-image:linear-gradient(transparent,rgba(89, 82, 91, 0.842));
+        height: 50px;
+        width: 100%;
+        border-bottom: 2px solid white;
+        transition: all .5s ease;
+        color: #ff0b71;
+    }
+   .menuBtn{
+        display: block;
+    }
+    .menuBtnIconActive{
+        transform: rotate(360deg);
+        transition: all .5s ease;
+    }
+    .myMenuActive{
+        height: 200px;
+        transition: all .5s ease;
+    }
+    .side-by-side{
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
